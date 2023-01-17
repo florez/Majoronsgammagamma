@@ -1,0 +1,24 @@
+Este es un manual de como utilizar la herramienta WebPlotDigitizer 
+para extraer datos de gráficas de forma sencilla y online.
+
+
+Lo primero a realizar es acceder a la página web https://automeris.io/WebPlotDigitizer/ esto abrira la página general de la herramienta. Para acceder a la versión web,se realiza click sobre la opción "Launch Now".
+
+Posteriormente, se selecciona la opción Load Image y se carga la gráfica a analizar.
+
+Acto seguido, se selecciona el menu Axes y la opción Calibrate Axes. Esto abrirá una ventana que permite seleccionar el tipo de ejes trabajados. Con esto se seleccionan dos puntos sobre el eje x, preferiblemente los extremos, y dos sobre el eje y de tal manera que se realiza la calibración.
+
+Habiendo calibrado los ejes, se selecciona la entrada Datasets y la opción Add dataset, la cual permitirá hacer el barrido sobre los datos. Con esto, se selecciona el nombre el cual debe ser único para el conjunto de datos analizados. 
+
+Posterior a esto, se habilita una ventana en el costado derecho la cual permitirá hacer la extracción de información. Si hay pocos datos, se sugiere utilizar la opción Manual Extraction, donde se deben añadir punto por punto. Si por el contrario se tiene una curva continua, se debe utilizar la opción Automatic Extraction, la cual permite que el software, con base a un análisis de color de la curva, extraiga los datos de manera correcta. Para esto hay dos opciones: Box y Pen.
+
+La opción Box permite al usuario crear una caja y extraer los puntos de acuerdo al Foreground Color escogido. Por otro lado, la opción Pen realiza lo mismo, pero se debe realizar un trazado sobre los puntos con el mouse. 
+
+Acto seguido, si algún punto no queda sobre la curva deseada, se selecciona la opción Adjust Point, la cual permite (por medio del uso de las flechas del teclado) ajustar la posición del punto como el usuario desee. Ahora, si se requiere eliminar un punto, se selecciona la opción Delete Point. 
+
+Finalmente, para extraer los datos se selecciona la opción View Data al lado izquierdo de la pantalla. Esto despliega un menú con los datos listos para exportar. Se sugiere seleccionar la opción Download .CSV para crear un archivo del mismo tipo, el cual puede ser cargado usando python o c++ para crear las gráficas correspondientes. 
+
+
+
+
+
